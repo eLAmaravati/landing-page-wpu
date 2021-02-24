@@ -1,0 +1,210 @@
+/* --------------------------------------------
+* Theme name  : Landing Page WPU
+* Author      : Langit Amaravati
+* Author URI  : https://www.langitamaravati.com
+* Description : Latihan ngobar WPA
+------------------------------------------------*/
+
+/* Reset */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Variabel */
+:root {
+	--linkcolor: #0b63dc;
+}
+
+/* Navbar */
+.navbar {
+	position: relative;
+	z-index: 1;
+}
+
+.navbar-brand {
+	font-family: 'Viga', sans-serif;
+	font-size: 2rem;
+}
+
+.btn-nav {
+	text-transform: uppercase;
+	border-radius: 40px;
+	letter-spacing: 1px;
+}
+
+
+/* Jumbotron */
+.jumbotron {
+	position: relative;
+	background-image: url("img/hero-img.jpg");
+	background-size: cover;
+	height: 640px;
+	text-align: center;
+}
+
+.jumbotron .display-4 {
+	color: #fff;
+	margin-top: 150px;
+	font-weight: 200;
+	text-shadow: 1px 1px 1px rgb(0, 0, 0, .7);
+	margin-bottom: 30px;
+}
+
+.jumbotron .display-4 span {
+	font-weight: 500;
+	text-shadow: 1px 1px 1px rgb(0, 0, 0, .7);
+}
+
+.jumbotron .container {
+	position: relative;
+	z-index: 1;
+}
+
+.jumbotron::after {
+	position: absolute;
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+	bottom: 0;
+}
+
+
+
+/* Info Panel */
+.info-panel {
+	background-color: #fff;
+	box-shadow: 0 3px 20px rgb(0, 0, 0, .5);
+	border-radius: 20px;
+	margin-top: -100px;
+	padding: 30px;
+}
+
+.info-panel img {
+	width: 80px;
+	height: 80px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.info-panel p {
+	font-size: 1rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: 20px;
+	line-height: 1em;
+}
+
+.info-panel small {
+	font-size: .8rem;
+	color: #acacac;
+}
+
+
+/* Working Space */
+.working-space {
+	margin-top: 120px;
+}
+
+.working-space img {
+	border-radius: 20px;
+}
+
+.working-space h2 {
+	font-size: 2.5rem;
+	font-weight: 200;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 40px;
+}
+
+.working-space h2 span {
+	font-weight: 500;
+	text-align: center;
+}
+
+.working-space p {
+	margin: 30px 0;
+	color: #acacac;
+	text-align: center;
+}
+
+
+/* Testimonial */
+.testimonial {
+	margin-top: 120px;
+}
+
+.testimonial p {
+	font-style: italic;
+	font-size: 1.5rem;
+	font-weight: 200;
+}
+
+.testimonial figure img {
+	margin: 20px 20px 10px;
+	width: 100px;
+	opacity: .7;
+}
+
+.testimonial figure img.active {
+	opacity: 1;
+	width: 150px;
+	margin-top: -5px;
+}
+
+.testimonial .name {
+	font-size: 1rem;
+	font-weight: bold;
+	font-style: normal;
+	color: #444;
+	margin-bottom: 2px;
+}
+
+
+/* Footer */
+footer {
+	color: #acacac;
+	font-size: 1rem;
+	margin: 100px auto 50px;
+}
+
+
+/* ------------------------------
+* DESKTOP VERSION
+---------------------------------*/
+@media (min-width: 992px) {
+
+	/* Navbar */
+	.navbar-brand,
+	.nav-link {
+		color: #fff !important;
+		text-shadow: 1px 1px 1px rgb(0, 0, 0, .7);
+	}
+
+	.nav-link {
+		text-transform: uppercase;
+		margin-right: 30px;
+	}
+
+	.nav-link:hover::after {
+		content: "";
+		display: block;
+		border-bottom: 3px solid var(--linkcolor);
+		width: 50%;
+		margin: auto;
+		padding-bottom: 3px;
+		margin-bottom: -8px;
+	}
+
+	/* Jumbotron */
+	.jumbotron {
+		margin-top: -75px;
+	}
+
+	.jumbotron .display-4 {
+		font-size: 5rem;
+	}
+}
